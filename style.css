@@ -143,7 +143,7 @@ body {
 }
 
 @media screen and (max-width: 768px){
-    .main-part{
+    .main-section{
         background-image: none;
     }
     .backimage{
