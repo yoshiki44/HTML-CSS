@@ -1,0 +1,361 @@
+body {
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    margin: 0;
+}
+
+
+
+.header{
+    width: 100%;
+    padding: 20px 0px;
+    position: absolute;
+    z-index: 3;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.logo img{
+    display: block;
+    height: 20px;
+    width: auto;
+    text-align: center;
+}
+
+.logo img:hover{
+    opacity: 0.7;
+}
+
+.menu-bar{
+    display: none;
+}
+
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 0px;
+
+}
+
+
+.header-menu-item:hover{
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 1080px)
+{
+    .header{
+        position: fixed !important;
+        z-index: 10;
+        background-color: white;
+    }
+    .header-menu{
+        display: none;
+    }
+    
+    .main-part{
+        padding-top: 60px;
+    }
+    
+    .menu-bar{
+        display: block;
+        width: 30px;
+        position: relative;
+        cursor: pointer;
+        height: 21px;
+    }
+    
+    .menu-bar-list{
+        background-color: black;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        z-index: 20;
+        width: 100%;
+    }
+    
+    .menu-bar-list:first-child{
+        top: 0%;
+    }
+    
+    .menu-bar-list:last-child{
+        top: 100%;
+    }
+    
+    
+}
+
+.menu > span{
+    display: block;
+    text-align: center;
+    width: 90px;
+
+}
+
+.menu > span:first-child{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: black;
+}
+
+.menu > span:last-child{
+    font-size: 10px;
+    color: black;
+}
+
+.counseling{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #FF9900;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.counseling:hover{
+    opacity:0.7;
+}
+
+.main-section{
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position:center;
+    margin: 0px;
+}
+
+
+.backimage{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .main-part{
+        background-image: none;
+    }
+    .backimage{
+        display: block;
+        width: 100%;
+    }
+    
+    .content-outline{
+        max-width: none;
+        padding: 0 20px;
+        margin-top: -45vw;
+
+    }
+    
+    .main-content > h1{
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 769px){
+    .content-outline{
+        max-width: 1140px;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px; 
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        
+    }
+}
+
+.main-content{
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px){
+    .main-content{
+        width: 100%;
+    }
+    
+    .items{
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .items > img{
+        margin-right: 0!important;
+    }
+    
+    .percent{
+        width: 27.5%;
+    }
+    
+    .payback{
+        width: 27.5%;
+    }
+    
+    .link-menu{
+        flex-direction: column;
+    }
+    
+    .first{
+        width: 100% !important;
+    }
+    
+    .second{
+        display: none;
+    }
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.items{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.items > img{
+    margin-right: 10px;
+}
+.No1{
+    width: 40%;
+}
+
+.link-menu{
+    display: flex;
+
+}
+
+.link{
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 769px){
+    .link:hover {
+        opacity: 0.7;
+}
+}
+
+.first{
+    width: 55%;
+    color: white;
+    background-color:#FF9900;
+    margin-right: 20px;
+}
+
+.second{
+    width: 35%;
+    color: black;
+    border: solid 1px #C0C0C0;
+}
+
+.caution{
+    color: #C0C0C0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px){
+    .caution{
+        padding-top: 25px;
+    }
+}
+
+.coment{
+    margin: 0;
+}
+
+.AboutWrapper{
+    background-color:#FF9900;
+}
+
+.lowerpart{
+    display:flex;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    padding: 40px 0;
+}
+video{
+    width: 50%;
+}
+
+.information{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    
+}
+
+.information > h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.information > p{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.learn{
+    display: flex;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width:1024px){
+    .AboutWrapper{
+        padding:40px 20px;
+    }
+    
+    .lowerpart{
+        flex-direction: column;
+    }
+    
+    video{
+        width: 75%;
+        margin: auto;
+    }
+    
+    .information{
+        padding:0;
+        width: 75%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    video{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .information{
+        width: 100%;
+        margin: 0;
+    }
+    
+}
